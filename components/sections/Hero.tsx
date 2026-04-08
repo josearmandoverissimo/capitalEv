@@ -7,17 +7,19 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-navy">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-navy">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-bg.png"
+          src="/capitalev/images/hero-people.png"
           alt="CapitalEv Corporate"
           fill
-          className="object-cover opacity-40 mix-blend-overlay"
+          sizes="100vw"
+          className="object-cover opacity-40"
+          style={{ willChange: 'transform' }}
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
