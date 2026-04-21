@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -36,12 +37,14 @@ export default function Header() {
       <nav className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 group">
-            <span className={cn(
-              "text-2xl font-bold tracking-tight transition-colors",
-              isScrolled ? "text-navy" : "text-white"
-            )}>
-              Capital<span className="text-gold">Ev</span>
-            </span>
+            <Image
+              src="/images/logo_ev.png"
+              alt="CapitalEv"
+              width={120}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
         </div>
 

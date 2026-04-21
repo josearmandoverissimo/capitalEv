@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 // Brand icons are not available in Lucide v1.0+, using SVGs instead
@@ -49,8 +50,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link href="/" className="text-2xl font-bold tracking-tight">
-              Capital<span className="text-gold">Ev</span>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/logo_ev.png"
+                alt="CapitalEv"
+                width={120}
+                height={40}
+                className="h-10 w-auto object-contain"
+              />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
               Holding estratégica dedicada à evolução do setor de saúde, conectando investidores a oportunidades de alto impacto e clínicas à excelência operacional.
