@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/capitalev/images/hero-people.png"
+          src="/images/hero-people.png"
           alt="CapitalEv Corporate"
           fill
           sizes="100vw"
